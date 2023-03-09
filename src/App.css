@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toproot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left{
+  height: auto; 
+}
+.pic{
+  height: 30px;
+  width: 20px; 
+}
+.img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.right{
+  width:auto;
+  cursor: pointer;
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  font-size: 110%;
+}
+.topbottom{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: auto;
+  width: 350px;
+  margin-top: 2rem;
+  box-shadow:8px 8px 12px #aaa; 
 }
-
-.App-link {
-  color: #61dafb;
+.first{
+  padding-left: 1rem;
+  cursor: default;
+  background-color: rgba(248, 247, 246, 0.938);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.second{
+  background-color: rgba(248, 247, 246, 0.938);
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: default;
 }
+.phone{
+  width: 15px;
+  height: 15px;
+}
+.third{
+  background-color:rgba(248, 247, 246, 0.938) ;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  cursor: default;
+}
+.buildin{
+  width: 15px;
+  height: 15px;
+}
+.fourth{
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  font-size: 120%;
+  color: black;
+  font-weight: normal;
+}
+.fiveth{
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  cursor: pointer;
+  font-size:120%;
+  color:black;
+  font-weight: normal;
+}
+.fourth:hover{
+  background-color: rgba(190, 189, 188, 0.356);
+}
+.fiveth:hover{
+  background-color: rgba(190, 189, 188, 0.356);}

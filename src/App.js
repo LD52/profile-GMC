@@ -1,25 +1,59 @@
-import logo from './logo.svg';
+import Photo from './photo.jpeg';
 import './App.css';
+import { Component } from 'react';
+import Icon from  './chevron.png';
+import Phone from './telephone.png';
+import build from './building.png';
+class App extends Component {
 
-function App() {
-  return (
+  state = {
+  }
+  open = false;
+  Display = () =>{
+    if (open === false ){
+      this.setState{
+        
+      }
+    } 
+  }
+  render() {
+     return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='toproot'>
+        <div className='left'> 
+        <img src ={Photo}  className='img' alt ='img'/>
+        </div>
+        <button onClick={this.Display}>
+          <div className='right'> 
+       <div >Luca-David</div>
+      <div><img src={Icon} className='pic' alt ='img'/></div> 
+        </div>
+        </button>
+        
+        </div>
+        <div className='topbottom'>
+          <div className='warzel'>
+      <div className='first'>
+       <div><h2>Luca-David Konan</h2></div>
+       <div>konancurry@gmail.com</div>
+      </div>
+      <div className='second' >
+        <div>+225 07 79 08 8006</div>
+        <div><img src={Phone} className='phone' alt='img'/></div>
+      </div>
+      <div className='third'>
+        <div>Abidjan Hackerspace</div>
+        <div><img src={build} className='buildin' alt='img'/></div>
+      </div>
+      <div className='fourth' > Account Settings</div>
+      <div className='fiveth'>Log out</div>
     </div>
-  );
-}
+
+        </div>
+    </div>
+    )}
+    open = true;
+  }
+
 
 export default App;
