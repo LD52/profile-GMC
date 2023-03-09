@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
   flex-direction: column;
 }
 .toproot{
@@ -41,10 +40,14 @@
   display: flex;
   flex-direction: column;
   height: auto;
+  display: none;
   width: 350px;
   margin-top: 2rem;
   box-shadow:8px 8px 12px #aaa; 
+  transition: all 0.3s;
 }
+
+
 .first{
   padding-left: 1rem;
   cursor: default;
@@ -98,3 +101,8 @@
 }
 .fiveth:hover{
   background-color: rgba(190, 189, 188, 0.356);}
+
+.show{
+  display: block;
+}
+
